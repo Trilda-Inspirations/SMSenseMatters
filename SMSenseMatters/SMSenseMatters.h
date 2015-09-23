@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+#ifndef SMSENSEMATTERS_H
+#define SMSENSEMATTERS_H
+
+// sensors
+#import <SMSenseMatters/SMSensor.h>
+#import <SMSenseMatters/SMAccelerometerSensor.h>
+#import <SMSenseMatters/SMGyroscopeSensor.h>
+
+// data structures
+#import <SMSenseMatters/SMSensorData.h>
+#import <SMSenseMatters/SM3DMotionSensorData.h>
+
+#endif
+
+
 @interface SMSenseMatters : NSObject
 
 @end

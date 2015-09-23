@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		FAE469B71BB3264D00B6E4BA /* SMSenseMatters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAE469B61BB3264D00B6E4BA /* SMSenseMatters.h */; };
 		FAE469B91BB3264D00B6E4BA /* SMSenseMatters.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469B81BB3264D00B6E4BA /* SMSenseMatters.m */; };
-		FAE469C41BB326BE00B6E4BA /* SMAccelerometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469C11BB326BE00B6E4BA /* SMAccelerometerSensor.m */; settings = {ASSET_TAGS = (); }; };
-		FAE469CB1BB326D100B6E4BA /* SM3DMotionSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469C81BB326D100B6E4BA /* SM3DMotionSensorData.m */; settings = {ASSET_TAGS = (); }; };
-		FAE469CC1BB326D100B6E4BA /* SMSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469CA1BB326D100B6E4BA /* SMSensorData.m */; settings = {ASSET_TAGS = (); }; };
 		FAE469CE1BB3277600B6E4BA /* SMSenseMatters.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469B61BB3264D00B6E4BA /* SMSenseMatters.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE469CF1BB327AB00B6E4BA /* SMSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469C21BB326BE00B6E4BA /* SMSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE469D01BB327B100B6E4BA /* SMSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469C31BB326BE00B6E4BA /* SMSensor.m */; settings = {ASSET_TAGS = (); }; };
-		FAE469D11BB327B500B6E4BA /* SMAccelerometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469C01BB326BE00B6E4BA /* SMAccelerometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE469D21BB327B900B6E4BA /* SMSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469C91BB326D100B6E4BA /* SMSensorData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE469D31BB327BD00B6E4BA /* SM3DMotionSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469C71BB326D100B6E4BA /* SM3DMotionSensorData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE469DD1BB32A8A00B6E4BA /* SMGyroscopeSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469DB1BB32A8A00B6E4BA /* SMGyroscopeSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE469DE1BB32A8A00B6E4BA /* SMGyroscopeSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469DC1BB32A8A00B6E4BA /* SMGyroscopeSensor.m */; settings = {ASSET_TAGS = (); }; };
+		FAE469EB1BB3357900B6E4BA /* SM3DMotionSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469E71BB3357900B6E4BA /* SM3DMotionSensorData.h */; settings = {ASSET_TAGS = (); }; };
+		FAE469EC1BB3357900B6E4BA /* SM3DMotionSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469E81BB3357900B6E4BA /* SM3DMotionSensorData.m */; settings = {ASSET_TAGS = (); }; };
+		FAE469ED1BB3357900B6E4BA /* SMSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469E91BB3357900B6E4BA /* SMSensorData.h */; settings = {ASSET_TAGS = (); }; };
+		FAE469EE1BB3357900B6E4BA /* SMSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469EA1BB3357900B6E4BA /* SMSensorData.m */; settings = {ASSET_TAGS = (); }; };
+		FAE469F51BB3359700B6E4BA /* SMAccelerometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469EF1BB3359700B6E4BA /* SMAccelerometerSensor.h */; settings = {ASSET_TAGS = (); }; };
+		FAE469F61BB3359700B6E4BA /* SMAccelerometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F01BB3359700B6E4BA /* SMAccelerometerSensor.m */; settings = {ASSET_TAGS = (); }; };
+		FAE469F71BB3359700B6E4BA /* SMGyroscopeSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469F11BB3359700B6E4BA /* SMGyroscopeSensor.h */; settings = {ASSET_TAGS = (); }; };
+		FAE469F81BB3359700B6E4BA /* SMGyroscopeSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F21BB3359700B6E4BA /* SMGyroscopeSensor.m */; settings = {ASSET_TAGS = (); }; };
+		FAE469F91BB3359700B6E4BA /* SMSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469F31BB3359700B6E4BA /* SMSensor.h */; settings = {ASSET_TAGS = (); }; };
+		FAE469FA1BB3359700B6E4BA /* SMSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F41BB3359700B6E4BA /* SMSensor.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,16 +39,16 @@
 		FAE469B31BB3264D00B6E4BA /* libSMSenseMatters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMSenseMatters.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE469B61BB3264D00B6E4BA /* SMSenseMatters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSenseMatters.h; sourceTree = "<group>"; };
 		FAE469B81BB3264D00B6E4BA /* SMSenseMatters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSenseMatters.m; sourceTree = "<group>"; };
-		FAE469C01BB326BE00B6E4BA /* SMAccelerometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMAccelerometerSensor.h; path = ../../SMSenseMatters_old/SMSenseMatters/Sensors/SMAccelerometerSensor.h; sourceTree = "<group>"; };
-		FAE469C11BB326BE00B6E4BA /* SMAccelerometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMAccelerometerSensor.m; path = ../../SMSenseMatters_old/SMSenseMatters/Sensors/SMAccelerometerSensor.m; sourceTree = "<group>"; };
-		FAE469C21BB326BE00B6E4BA /* SMSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSensor.h; path = ../../SMSenseMatters_old/SMSenseMatters/Sensors/SMSensor.h; sourceTree = "<group>"; };
-		FAE469C31BB326BE00B6E4BA /* SMSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSensor.m; path = ../../SMSenseMatters_old/SMSenseMatters/Sensors/SMSensor.m; sourceTree = "<group>"; };
-		FAE469C71BB326D100B6E4BA /* SM3DMotionSensorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SM3DMotionSensorData.h; path = ../../SMSenseMatters_old/SMSenseMatters/Data/SM3DMotionSensorData.h; sourceTree = "<group>"; };
-		FAE469C81BB326D100B6E4BA /* SM3DMotionSensorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SM3DMotionSensorData.m; path = ../../SMSenseMatters_old/SMSenseMatters/Data/SM3DMotionSensorData.m; sourceTree = "<group>"; };
-		FAE469C91BB326D100B6E4BA /* SMSensorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSensorData.h; path = ../../SMSenseMatters_old/SMSenseMatters/Data/SMSensorData.h; sourceTree = "<group>"; };
-		FAE469CA1BB326D100B6E4BA /* SMSensorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSensorData.m; path = ../../SMSenseMatters_old/SMSenseMatters/Data/SMSensorData.m; sourceTree = "<group>"; };
-		FAE469DB1BB32A8A00B6E4BA /* SMGyroscopeSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMGyroscopeSensor.h; path = ../../SMSenseMatters_old/SMSenseMatters/Sensors/SMGyroscopeSensor.h; sourceTree = "<group>"; };
-		FAE469DC1BB32A8A00B6E4BA /* SMGyroscopeSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMGyroscopeSensor.m; path = ../../SMSenseMatters_old/SMSenseMatters/Sensors/SMGyroscopeSensor.m; sourceTree = "<group>"; };
+		FAE469E71BB3357900B6E4BA /* SM3DMotionSensorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SM3DMotionSensorData.h; path = Data/SM3DMotionSensorData.h; sourceTree = "<group>"; };
+		FAE469E81BB3357900B6E4BA /* SM3DMotionSensorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SM3DMotionSensorData.m; path = Data/SM3DMotionSensorData.m; sourceTree = "<group>"; };
+		FAE469E91BB3357900B6E4BA /* SMSensorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSensorData.h; path = Data/SMSensorData.h; sourceTree = "<group>"; };
+		FAE469EA1BB3357900B6E4BA /* SMSensorData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSensorData.m; path = Data/SMSensorData.m; sourceTree = "<group>"; };
+		FAE469EF1BB3359700B6E4BA /* SMAccelerometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMAccelerometerSensor.h; path = Sensors/SMAccelerometerSensor.h; sourceTree = "<group>"; };
+		FAE469F01BB3359700B6E4BA /* SMAccelerometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMAccelerometerSensor.m; path = Sensors/SMAccelerometerSensor.m; sourceTree = "<group>"; };
+		FAE469F11BB3359700B6E4BA /* SMGyroscopeSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMGyroscopeSensor.h; path = Sensors/SMGyroscopeSensor.h; sourceTree = "<group>"; };
+		FAE469F21BB3359700B6E4BA /* SMGyroscopeSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMGyroscopeSensor.m; path = Sensors/SMGyroscopeSensor.m; sourceTree = "<group>"; };
+		FAE469F31BB3359700B6E4BA /* SMSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSensor.h; path = Sensors/SMSensor.h; sourceTree = "<group>"; };
+		FAE469F41BB3359700B6E4BA /* SMSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSensor.m; path = Sensors/SMSensor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +92,12 @@
 		FAE469BF1BB3268400B6E4BA /* Sensors */ = {
 			isa = PBXGroup;
 			children = (
-				FAE469C01BB326BE00B6E4BA /* SMAccelerometerSensor.h */,
-				FAE469C11BB326BE00B6E4BA /* SMAccelerometerSensor.m */,
-				FAE469DB1BB32A8A00B6E4BA /* SMGyroscopeSensor.h */,
-				FAE469DC1BB32A8A00B6E4BA /* SMGyroscopeSensor.m */,
-				FAE469C21BB326BE00B6E4BA /* SMSensor.h */,
-				FAE469C31BB326BE00B6E4BA /* SMSensor.m */,
+				FAE469EF1BB3359700B6E4BA /* SMAccelerometerSensor.h */,
+				FAE469F01BB3359700B6E4BA /* SMAccelerometerSensor.m */,
+				FAE469F11BB3359700B6E4BA /* SMGyroscopeSensor.h */,
+				FAE469F21BB3359700B6E4BA /* SMGyroscopeSensor.m */,
+				FAE469F31BB3359700B6E4BA /* SMSensor.h */,
+				FAE469F41BB3359700B6E4BA /* SMSensor.m */,
 			);
 			name = Sensors;
 			sourceTree = "<group>";
@@ -105,10 +105,10 @@
 		FAE469C61BB326C100B6E4BA /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FAE469C71BB326D100B6E4BA /* SM3DMotionSensorData.h */,
-				FAE469C81BB326D100B6E4BA /* SM3DMotionSensorData.m */,
-				FAE469C91BB326D100B6E4BA /* SMSensorData.h */,
-				FAE469CA1BB326D100B6E4BA /* SMSensorData.m */,
+				FAE469E71BB3357900B6E4BA /* SM3DMotionSensorData.h */,
+				FAE469E81BB3357900B6E4BA /* SM3DMotionSensorData.m */,
+				FAE469E91BB3357900B6E4BA /* SMSensorData.h */,
+				FAE469EA1BB3357900B6E4BA /* SMSensorData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -120,11 +120,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE469D21BB327B900B6E4BA /* SMSensorData.h in Headers */,
-				FAE469D11BB327B500B6E4BA /* SMAccelerometerSensor.h in Headers */,
-				FAE469DD1BB32A8A00B6E4BA /* SMGyroscopeSensor.h in Headers */,
-				FAE469D31BB327BD00B6E4BA /* SM3DMotionSensorData.h in Headers */,
-				FAE469CF1BB327AB00B6E4BA /* SMSensor.h in Headers */,
+				FAE469F91BB3359700B6E4BA /* SMSensor.h in Headers */,
+				FAE469ED1BB3357900B6E4BA /* SMSensorData.h in Headers */,
+				FAE469F71BB3359700B6E4BA /* SMGyroscopeSensor.h in Headers */,
+				FAE469EB1BB3357900B6E4BA /* SM3DMotionSensorData.h in Headers */,
+				FAE469F51BB3359700B6E4BA /* SMAccelerometerSensor.h in Headers */,
 				FAE469CE1BB3277600B6E4BA /* SMSenseMatters.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,11 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE469B91BB3264D00B6E4BA /* SMSenseMatters.m in Sources */,
-				FAE469CC1BB326D100B6E4BA /* SMSensorData.m in Sources */,
-				FAE469D01BB327B100B6E4BA /* SMSensor.m in Sources */,
-				FAE469CB1BB326D100B6E4BA /* SM3DMotionSensorData.m in Sources */,
-				FAE469C41BB326BE00B6E4BA /* SMAccelerometerSensor.m in Sources */,
-				FAE469DE1BB32A8A00B6E4BA /* SMGyroscopeSensor.m in Sources */,
+				FAE469FA1BB3359700B6E4BA /* SMSensor.m in Sources */,
+				FAE469F81BB3359700B6E4BA /* SMGyroscopeSensor.m in Sources */,
+				FAE469EE1BB3357900B6E4BA /* SMSensorData.m in Sources */,
+				FAE469EC1BB3357900B6E4BA /* SM3DMotionSensorData.m in Sources */,
+				FAE469F61BB3359700B6E4BA /* SMAccelerometerSensor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

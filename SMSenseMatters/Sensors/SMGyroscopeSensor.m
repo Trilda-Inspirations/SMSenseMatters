@@ -35,6 +35,7 @@ const float SMGYROSCOPE_DEFAULT_INTERVAL = .2;
                 _currentData.xAxis = gyroData.rotationRate.x;
                 _currentData.yAxis = gyroData.rotationRate.y;
                 _currentData.zAxis = gyroData.rotationRate.z;
+                _currentData.dateSensed = [NSDate date];
             }
         }];
     }

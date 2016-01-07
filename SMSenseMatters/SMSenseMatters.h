@@ -15,10 +15,18 @@
 #import <SMSenseMatters/SMSensor.h>
 #import <SMSenseMatters/SMAccelerometerSensor.h>
 #import <SMSenseMatters/SMGyroscopeSensor.h>
+#import <SMSenseMatters/SMBatterySensor.h>
+#import <SMSenseMatters/SMProximitySensor.h>
+#import <SMSenseMatters/SMStepSensor.h>
+#import <SMSenseMatters/SMMagnetometerSensor.h>
+#import <SMSenseMatters/SMBluetoothDiscoverySensor.h>
 
 // data structures
 #import <SMSenseMatters/SMSensorData.h>
 #import <SMSenseMatters/SM3DMotionSensorData.h>
+#import <SMSenseMatters/SMBatteryData.h>
+#import <SMSenseMatters/SMProximityData.h>
+#import <SMSenseMatters/SMStepsData.h>
 
 #endif
 

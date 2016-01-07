@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA9CF3C61BDFBEE1005F906C /* SMStepSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9CF3C41BDFBEE1005F906C /* SMStepSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9CF3C71BDFBEE1005F906C /* SMStepSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CF3C51BDFBEE1005F906C /* SMStepSensor.m */; };
+		FA9CF3CA1BDFBF5E005F906C /* SMStepsData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9CF3C81BDFBF5E005F906C /* SMStepsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9CF3CB1BDFBF5E005F906C /* SMStepsData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CF3C91BDFBF5E005F906C /* SMStepsData.m */; };
+		FABB1CDE1BCDBB9200FE8909 /* MobileWiFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABB1CDD1BCDBB9200FE8909 /* MobileWiFi.framework */; };
 		FAE469B71BB3264D00B6E4BA /* SMSenseMatters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAE469B61BB3264D00B6E4BA /* SMSenseMatters.h */; };
 		FAE469B91BB3264D00B6E4BA /* SMSenseMatters.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469B81BB3264D00B6E4BA /* SMSenseMatters.m */; };
 		FAE469CE1BB3277600B6E4BA /* SMSenseMatters.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469B61BB3264D00B6E4BA /* SMSenseMatters.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE469EB1BB3357900B6E4BA /* SM3DMotionSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469E71BB3357900B6E4BA /* SM3DMotionSensorData.h */; settings = {ASSET_TAGS = (); }; };
-		FAE469EC1BB3357900B6E4BA /* SM3DMotionSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469E81BB3357900B6E4BA /* SM3DMotionSensorData.m */; settings = {ASSET_TAGS = (); }; };
-		FAE469ED1BB3357900B6E4BA /* SMSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469E91BB3357900B6E4BA /* SMSensorData.h */; settings = {ASSET_TAGS = (); }; };
-		FAE469EE1BB3357900B6E4BA /* SMSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469EA1BB3357900B6E4BA /* SMSensorData.m */; settings = {ASSET_TAGS = (); }; };
-		FAE469F51BB3359700B6E4BA /* SMAccelerometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469EF1BB3359700B6E4BA /* SMAccelerometerSensor.h */; settings = {ASSET_TAGS = (); }; };
-		FAE469F61BB3359700B6E4BA /* SMAccelerometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F01BB3359700B6E4BA /* SMAccelerometerSensor.m */; settings = {ASSET_TAGS = (); }; };
-		FAE469F71BB3359700B6E4BA /* SMGyroscopeSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469F11BB3359700B6E4BA /* SMGyroscopeSensor.h */; settings = {ASSET_TAGS = (); }; };
-		FAE469F81BB3359700B6E4BA /* SMGyroscopeSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F21BB3359700B6E4BA /* SMGyroscopeSensor.m */; settings = {ASSET_TAGS = (); }; };
-		FAE469F91BB3359700B6E4BA /* SMSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469F31BB3359700B6E4BA /* SMSensor.h */; settings = {ASSET_TAGS = (); }; };
-		FAE469FA1BB3359700B6E4BA /* SMSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F41BB3359700B6E4BA /* SMSensor.m */; settings = {ASSET_TAGS = (); }; };
+		FAE469EB1BB3357900B6E4BA /* SM3DMotionSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469E71BB3357900B6E4BA /* SM3DMotionSensorData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE469EC1BB3357900B6E4BA /* SM3DMotionSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469E81BB3357900B6E4BA /* SM3DMotionSensorData.m */; };
+		FAE469ED1BB3357900B6E4BA /* SMSensorData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469E91BB3357900B6E4BA /* SMSensorData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE469EE1BB3357900B6E4BA /* SMSensorData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469EA1BB3357900B6E4BA /* SMSensorData.m */; };
+		FAE469F51BB3359700B6E4BA /* SMAccelerometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469EF1BB3359700B6E4BA /* SMAccelerometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE469F61BB3359700B6E4BA /* SMAccelerometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F01BB3359700B6E4BA /* SMAccelerometerSensor.m */; };
+		FAE469F71BB3359700B6E4BA /* SMGyroscopeSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469F11BB3359700B6E4BA /* SMGyroscopeSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE469F81BB3359700B6E4BA /* SMGyroscopeSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F21BB3359700B6E4BA /* SMGyroscopeSensor.m */; };
+		FAE469F91BB3359700B6E4BA /* SMSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469F31BB3359700B6E4BA /* SMSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE469FA1BB3359700B6E4BA /* SMSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE469F41BB3359700B6E4BA /* SMSensor.m */; };
+		FAE46A011BB4057100B6E4BA /* SMBatterySensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE469FF1BB4057100B6E4BA /* SMBatterySensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE46A021BB4057100B6E4BA /* SMBatterySensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE46A001BB4057100B6E4BA /* SMBatterySensor.m */; };
+		FAE46A051BB4061800B6E4BA /* SMBatteryData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE46A031BB4061800B6E4BA /* SMBatteryData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE46A061BB4061800B6E4BA /* SMBatteryData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE46A041BB4061800B6E4BA /* SMBatteryData.m */; };
+		FAE46A091BB4098A00B6E4BA /* SMProximityData.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE46A071BB4098A00B6E4BA /* SMProximityData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE46A0A1BB4098A00B6E4BA /* SMProximityData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE46A081BB4098A00B6E4BA /* SMProximityData.m */; };
+		FAE46A0D1BB409A300B6E4BA /* SMProximitySensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE46A0B1BB409A300B6E4BA /* SMProximitySensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE46A0E1BB409A300B6E4BA /* SMProximitySensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE46A0C1BB409A300B6E4BA /* SMProximitySensor.m */; };
+		FAE46A101BB40B1500B6E4BA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE46A0F1BB40B1500B6E4BA /* CoreBluetooth.framework */; };
+		FAE46A131BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE46A111BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE46A141BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE46A121BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m */; };
+		FAFE5E5F1BDFC8CE00D34420 /* SMMagnetometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFE5E5D1BDFC8CE00D34420 /* SMMagnetometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAFE5E601BDFC8CE00D34420 /* SMMagnetometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE5E5E1BDFC8CE00D34420 /* SMMagnetometerSensor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +54,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA9CF3C41BDFBEE1005F906C /* SMStepSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMStepSensor.h; path = Sensors/SMStepSensor.h; sourceTree = "<group>"; };
+		FA9CF3C51BDFBEE1005F906C /* SMStepSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMStepSensor.m; path = Sensors/SMStepSensor.m; sourceTree = "<group>"; };
+		FA9CF3C81BDFBF5E005F906C /* SMStepsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMStepsData.h; path = Data/SMStepsData.h; sourceTree = "<group>"; };
+		FA9CF3C91BDFBF5E005F906C /* SMStepsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMStepsData.m; path = Data/SMStepsData.m; sourceTree = "<group>"; };
+		FABB1CDD1BCDBB9200FE8909 /* MobileWiFi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileWiFi.framework; sourceTree = "<group>"; };
+		FABB1CE11BCDBBC700FE8909 /* MobileWiFi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileWiFi.h; sourceTree = "<group>"; };
+		FABB1CE21BCDBBC700FE8909 /* WiFiDeviceClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiDeviceClient.h; sourceTree = "<group>"; };
+		FABB1CE31BCDBBC700FE8909 /* WiFiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiManager.h; sourceTree = "<group>"; };
+		FABB1CE41BCDBBC700FE8909 /* WiFiNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiFiNetwork.h; sourceTree = "<group>"; };
 		FAE469B31BB3264D00B6E4BA /* libSMSenseMatters.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSMSenseMatters.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE469B61BB3264D00B6E4BA /* SMSenseMatters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSenseMatters.h; sourceTree = "<group>"; };
 		FAE469B81BB3264D00B6E4BA /* SMSenseMatters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSenseMatters.m; sourceTree = "<group>"; };
@@ -49,6 +76,19 @@
 		FAE469F21BB3359700B6E4BA /* SMGyroscopeSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMGyroscopeSensor.m; path = Sensors/SMGyroscopeSensor.m; sourceTree = "<group>"; };
 		FAE469F31BB3359700B6E4BA /* SMSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSensor.h; path = Sensors/SMSensor.h; sourceTree = "<group>"; };
 		FAE469F41BB3359700B6E4BA /* SMSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSensor.m; path = Sensors/SMSensor.m; sourceTree = "<group>"; };
+		FAE469FF1BB4057100B6E4BA /* SMBatterySensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBatterySensor.h; path = Sensors/SMBatterySensor.h; sourceTree = "<group>"; };
+		FAE46A001BB4057100B6E4BA /* SMBatterySensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBatterySensor.m; path = Sensors/SMBatterySensor.m; sourceTree = "<group>"; };
+		FAE46A031BB4061800B6E4BA /* SMBatteryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBatteryData.h; path = Data/SMBatteryData.h; sourceTree = "<group>"; };
+		FAE46A041BB4061800B6E4BA /* SMBatteryData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBatteryData.m; path = Data/SMBatteryData.m; sourceTree = "<group>"; };
+		FAE46A071BB4098A00B6E4BA /* SMProximityData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMProximityData.h; path = Data/SMProximityData.h; sourceTree = "<group>"; };
+		FAE46A081BB4098A00B6E4BA /* SMProximityData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMProximityData.m; path = Data/SMProximityData.m; sourceTree = "<group>"; };
+		FAE46A0B1BB409A300B6E4BA /* SMProximitySensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMProximitySensor.h; path = Sensors/SMProximitySensor.h; sourceTree = "<group>"; };
+		FAE46A0C1BB409A300B6E4BA /* SMProximitySensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMProximitySensor.m; path = Sensors/SMProximitySensor.m; sourceTree = "<group>"; };
+		FAE46A0F1BB40B1500B6E4BA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FAE46A111BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBluetoothDiscoverySensor.h; path = Sensors/SMBluetoothDiscoverySensor.h; sourceTree = "<group>"; };
+		FAE46A121BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBluetoothDiscoverySensor.m; path = Sensors/SMBluetoothDiscoverySensor.m; sourceTree = "<group>"; };
+		FAFE5E5D1BDFC8CE00D34420 /* SMMagnetometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMMagnetometerSensor.h; path = Sensors/SMMagnetometerSensor.h; sourceTree = "<group>"; };
+		FAFE5E5E1BDFC8CE00D34420 /* SMMagnetometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMMagnetometerSensor.m; path = Sensors/SMMagnetometerSensor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +96,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE46A101BB40B1500B6E4BA /* CoreBluetooth.framework in Frameworks */,
+				FABB1CDE1BCDBB9200FE8909 /* MobileWiFi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FABB1CDF1BCDBBB900FE8909 /* Framework Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FABB1CE01BCDBBC700FE8909 /* MobileWiFi */,
+			);
+			name = "Framework Headers";
+			sourceTree = "<group>";
+		};
+		FABB1CE01BCDBBC700FE8909 /* MobileWiFi */ = {
+			isa = PBXGroup;
+			children = (
+				FABB1CE11BCDBBC700FE8909 /* MobileWiFi.h */,
+				FABB1CE21BCDBBC700FE8909 /* WiFiDeviceClient.h */,
+				FABB1CE31BCDBBC700FE8909 /* WiFiManager.h */,
+				FABB1CE41BCDBBC700FE8909 /* WiFiNetwork.h */,
+			);
+			path = MobileWiFi;
+			sourceTree = "<group>";
+		};
 		FAE469AA1BB3264D00B6E4BA = {
 			isa = PBXGroup;
 			children = (
+				FABB1CDF1BCDBBB900FE8909 /* Framework Headers */,
+				FABB1CDD1BCDBB9200FE8909 /* MobileWiFi.framework */,
+				FAE46A0F1BB40B1500B6E4BA /* CoreBluetooth.framework */,
 				FAE469B51BB3264D00B6E4BA /* SMSenseMatters */,
 				FAE469B41BB3264D00B6E4BA /* Products */,
 			);
@@ -96,8 +160,18 @@
 				FAE469F01BB3359700B6E4BA /* SMAccelerometerSensor.m */,
 				FAE469F11BB3359700B6E4BA /* SMGyroscopeSensor.h */,
 				FAE469F21BB3359700B6E4BA /* SMGyroscopeSensor.m */,
+				FAE469FF1BB4057100B6E4BA /* SMBatterySensor.h */,
+				FAE46A001BB4057100B6E4BA /* SMBatterySensor.m */,
+				FAE46A0B1BB409A300B6E4BA /* SMProximitySensor.h */,
+				FAE46A0C1BB409A300B6E4BA /* SMProximitySensor.m */,
+				FAE46A111BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h */,
+				FAE46A121BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m */,
 				FAE469F31BB3359700B6E4BA /* SMSensor.h */,
 				FAE469F41BB3359700B6E4BA /* SMSensor.m */,
+				FA9CF3C41BDFBEE1005F906C /* SMStepSensor.h */,
+				FA9CF3C51BDFBEE1005F906C /* SMStepSensor.m */,
+				FAFE5E5D1BDFC8CE00D34420 /* SMMagnetometerSensor.h */,
+				FAFE5E5E1BDFC8CE00D34420 /* SMMagnetometerSensor.m */,
 			);
 			name = Sensors;
 			sourceTree = "<group>";
@@ -109,6 +183,12 @@
 				FAE469E81BB3357900B6E4BA /* SM3DMotionSensorData.m */,
 				FAE469E91BB3357900B6E4BA /* SMSensorData.h */,
 				FAE469EA1BB3357900B6E4BA /* SMSensorData.m */,
+				FAE46A031BB4061800B6E4BA /* SMBatteryData.h */,
+				FAE46A041BB4061800B6E4BA /* SMBatteryData.m */,
+				FAE46A071BB4098A00B6E4BA /* SMProximityData.h */,
+				FAE46A081BB4098A00B6E4BA /* SMProximityData.m */,
+				FA9CF3C81BDFBF5E005F906C /* SMStepsData.h */,
+				FA9CF3C91BDFBF5E005F906C /* SMStepsData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -120,11 +200,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE46A0D1BB409A300B6E4BA /* SMProximitySensor.h in Headers */,
 				FAE469F91BB3359700B6E4BA /* SMSensor.h in Headers */,
 				FAE469ED1BB3357900B6E4BA /* SMSensorData.h in Headers */,
+				FAE46A091BB4098A00B6E4BA /* SMProximityData.h in Headers */,
+				FAE46A131BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h in Headers */,
+				FAE46A051BB4061800B6E4BA /* SMBatteryData.h in Headers */,
+				FA9CF3C61BDFBEE1005F906C /* SMStepSensor.h in Headers */,
 				FAE469F71BB3359700B6E4BA /* SMGyroscopeSensor.h in Headers */,
+				FA9CF3CA1BDFBF5E005F906C /* SMStepsData.h in Headers */,
 				FAE469EB1BB3357900B6E4BA /* SM3DMotionSensorData.h in Headers */,
 				FAE469F51BB3359700B6E4BA /* SMAccelerometerSensor.h in Headers */,
+				FAE46A011BB4057100B6E4BA /* SMBatterySensor.h in Headers */,
+				FAFE5E5F1BDFC8CE00D34420 /* SMMagnetometerSensor.h in Headers */,
 				FAE469CE1BB3277600B6E4BA /* SMSenseMatters.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +244,9 @@
 		FAE469AB1BB3264D00B6E4BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Frameworks,
+				);
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Alex Blundell";
 				TargetAttributes = {
@@ -188,10 +279,18 @@
 			files = (
 				FAE469B91BB3264D00B6E4BA /* SMSenseMatters.m in Sources */,
 				FAE469FA1BB3359700B6E4BA /* SMSensor.m in Sources */,
+				FAE46A141BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m in Sources */,
+				FAE46A021BB4057100B6E4BA /* SMBatterySensor.m in Sources */,
 				FAE469F81BB3359700B6E4BA /* SMGyroscopeSensor.m in Sources */,
 				FAE469EE1BB3357900B6E4BA /* SMSensorData.m in Sources */,
+				FAE46A0E1BB409A300B6E4BA /* SMProximitySensor.m in Sources */,
+				FA9CF3C71BDFBEE1005F906C /* SMStepSensor.m in Sources */,
+				FAE46A0A1BB4098A00B6E4BA /* SMProximityData.m in Sources */,
 				FAE469EC1BB3357900B6E4BA /* SM3DMotionSensorData.m in Sources */,
+				FA9CF3CB1BDFBF5E005F906C /* SMStepsData.m in Sources */,
 				FAE469F61BB3359700B6E4BA /* SMAccelerometerSensor.m in Sources */,
+				FAE46A061BB4061800B6E4BA /* SMBatteryData.m in Sources */,
+				FAFE5E601BDFC8CE00D34420 /* SMMagnetometerSensor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +396,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

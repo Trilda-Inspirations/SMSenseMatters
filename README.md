@@ -1,4 +1,7 @@
 # SMSenseMatters
+
+[![Build Status](https://travis-ci.org/spikeyfish2/SMSenseMatters.svg?branch=master)](https://travis-ci.org/spikeyfish2/SMSenseMatters)
+
 A library for accessing sensors on an iOS device in a unified way, using the callback methodology.
 
 ---

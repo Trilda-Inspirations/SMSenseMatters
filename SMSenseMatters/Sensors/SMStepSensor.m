@@ -12,8 +12,19 @@
 
 @interface SMStepSensor ()
 
+/**
+ *  Date for when this sensor was started
+ */
 @property (nonatomic, strong) NSDate *dateStarted;
+
+/**
+ *  Pedometer sensor
+ */
 @property (nonatomic, strong) CMPedometer *pedometer;
+
+/**
+ *  Number of steps taken in total
+ */
 @property (nonatomic) int numberOfSteps;
 
 @end

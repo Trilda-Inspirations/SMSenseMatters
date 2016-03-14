@@ -12,6 +12,7 @@
 
 @implementation SMBatterySensor
 
+
 + (BOOL)isAvailable {
     return [UIDevice currentDevice].batteryLevel >= 0.0f;
 }

@@ -30,7 +30,16 @@
 
 #endif
 
-
+/**
+ *  **SenseMatters**
+ *
+ *  A library for accessing the sensors on an iOS device in a unified way
+ */
 @interface SMSenseMatters : NSObject
+
+
+- (void)performBackgroundTasks;
+
++ (id)sharedInstance;
 
 @end

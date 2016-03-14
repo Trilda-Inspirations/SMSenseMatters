@@ -8,6 +8,9 @@
 
 #import "SMSensor.h"
 
+/**
+ *  Sensor for getting magnetometer readings from the device
+ */
 @interface SMMagnetometerSensor : SMSensor
 
 @end

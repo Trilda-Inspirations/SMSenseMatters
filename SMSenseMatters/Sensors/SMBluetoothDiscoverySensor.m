@@ -10,6 +10,9 @@
 
 @interface SMBluetoothDiscoverySensor ()
 
+/**
+ *  Bluetooth manager to gather data from
+ */
 @property (nonatomic, retain) CBCentralManager *bluetoothManager;
 
 @end
@@ -17,7 +20,8 @@
 @implementation SMBluetoothDiscoverySensor
 
 + (BOOL)isAvailable {
-    return NO;
+    CBCentralManagerState state = [[CBCentralManager alloc] init].state;
+    return (state == CBCentralManagerStatePoweredOn);
 }
 
 - (id)initWithSenseCallback:(SenseCallback)callback {

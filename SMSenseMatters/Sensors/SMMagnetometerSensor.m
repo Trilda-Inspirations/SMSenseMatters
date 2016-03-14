@@ -12,12 +12,29 @@
 
 @interface SMMagnetometerSensor ()
 
+/**
+ *  Motion manager for getting the data from
+ */
 @property (nonatomic, strong) CMMotionManager *manager;
 
+/**
+ *  Last x coordinate
+ */
 @property (nonatomic) double lastX;
+
+/**
+ *  Last y coordinate
+ */
 @property (nonatomic) double lastY;
+
+/**
+ *  Last z coordinate
+ */
 @property (nonatomic) double lastZ;
 
+/**
+ *  Operation queue for receiving the information periodically to
+ */
 @property (nonatomic, strong) NSOperationQueue *queue;
 
 @end

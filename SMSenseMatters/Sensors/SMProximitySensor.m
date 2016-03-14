@@ -13,7 +13,6 @@
 
 + (BOOL)isAvailable {
     return [UIDevice currentDevice].proximityMonitoringEnabled;
-    
 }
 
 - (void)sense {

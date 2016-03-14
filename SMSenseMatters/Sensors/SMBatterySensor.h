@@ -8,6 +8,9 @@
 
 #import "SMSensor.h"
 
+/**
+ *  A sensor for reading battery information
+ */
 @interface SMBatterySensor : SMSensor
 
 @end

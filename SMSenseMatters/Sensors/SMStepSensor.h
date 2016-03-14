@@ -8,6 +8,9 @@
 
 #import "SMSensor.h"
 
+/**
+ *  A sensor for detecting the number of steps that a user has made
+ */
 @interface SMStepSensor : SMSensor
 
 @end

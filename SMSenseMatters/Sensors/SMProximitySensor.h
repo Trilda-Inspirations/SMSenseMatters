@@ -9,6 +9,9 @@
 #import "SMSensor.h"
 #import <UIKit/UIKit.h>
 
+/**
+ *  A sensor for detecting whether an object is close to the front of the device
+ */
 @interface SMProximitySensor : SMSensor
 
 @end

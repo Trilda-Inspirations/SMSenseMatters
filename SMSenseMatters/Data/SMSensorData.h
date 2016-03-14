@@ -8,10 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  Generic sensor data object
+ */
 @interface SMSensorData : NSObject
 
+/**
+ *  Date when the data was sensed
+ */
 @property (nonatomic, strong) NSDate *dateSensed;
 
+/**
+ *  Serialised data to JSON object
+ *
+ *  @return JSON object
+ */
 - (id)serialise;
 
 @end

@@ -8,6 +8,9 @@
 
 #import <SMSenseMatters/SMSenseMatters.h>
 
+/**
+ *  A sensor for reading from the Gyroscope
+ */
 @interface SMGyroscopeSensor : SMSensor
 
 @end

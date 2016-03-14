@@ -8,11 +8,20 @@
 
 #import "SMGyroscopeSensor.h"
 
+
 const float SMGYROSCOPE_DEFAULT_INTERVAL = .2;
 
 @interface SMGyroscopeSensor ()
 
+/**
+ *  Motion manager to get gyroscope information from
+ */
 @property (nonatomic, strong) CMMotionManager *motionManager;
+
+
+/**
+ *  Latest data received from the sensor
+ */
 @property (atomic, strong) SM3DMotionSensorData *currentData;
 
 @end

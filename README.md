@@ -17,4 +17,24 @@ To install, download this repository to your computer, and copy the .xcodeproj f
 
 
 ## Usage 
-Documentation can be found
+
+### Documentation
+Documentation can be found [here](http://smsensematters.alexblundell.com).
+
+### Example
+
+#### Accelerometer
+The following example will subscribe to updates from the accelerometer, with a time interval of 30 seconds.
+
+```
+#import <SMSenseMatters/SMSenseMatters.h>
+
+...
+
+_sensor = [[SMAccelerometerSensor alloc] initWithSenseCallback:^(SMSensorData *senseData) {
+        SM3DMotionSensorData *accData = (SM3DMotionSensorData *)senseData;
+        NSLog(@"Data received: %f, %f, %f", accData.xAxis, accData.yAxis, accData.zAxis);
+    } timeInterval:30.0f];
+
+```
+

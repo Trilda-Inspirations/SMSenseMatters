@@ -36,9 +36,23 @@
 		FAE46A101BB40B1500B6E4BA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE46A0F1BB40B1500B6E4BA /* CoreBluetooth.framework */; };
 		FAE46A131BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE46A111BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE46A141BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE46A121BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m */; };
+		FAF5514B1C980DEB00C001AA /* SMSenseMattersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5514A1C980DEB00C001AA /* SMSenseMattersTests.m */; };
+		FAF5514D1C980DEB00C001AA /* libSMSenseMatters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE469B31BB3264D00B6E4BA /* libSMSenseMatters.a */; };
+		FAF551541C980ED100C001AA /* SM3DMotionSensorDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF551531C980ED100C001AA /* SM3DMotionSensorDataTests.m */; };
+		FAF551581C9815B400C001AA /* SMBatteryDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF551571C9815B400C001AA /* SMBatteryDataTests.m */; };
 		FAFE5E5F1BDFC8CE00D34420 /* SMMagnetometerSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFE5E5D1BDFC8CE00D34420 /* SMMagnetometerSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAFE5E601BDFC8CE00D34420 /* SMMagnetometerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE5E5E1BDFC8CE00D34420 /* SMMagnetometerSensor.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAF5514E1C980DEB00C001AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE469AB1BB3264D00B6E4BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE469B21BB3264D00B6E4BA;
+			remoteInfo = SMSenseMatters;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FAE469B11BB3264D00B6E4BA /* CopyFiles */ = {
@@ -87,6 +101,11 @@
 		FAE46A0F1BB40B1500B6E4BA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		FAE46A111BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBluetoothDiscoverySensor.h; path = Sensors/SMBluetoothDiscoverySensor.h; sourceTree = "<group>"; };
 		FAE46A121BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBluetoothDiscoverySensor.m; path = Sensors/SMBluetoothDiscoverySensor.m; sourceTree = "<group>"; };
+		FAF551481C980DEB00C001AA /* SMSenseMattersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSenseMattersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF5514A1C980DEB00C001AA /* SMSenseMattersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSenseMattersTests.m; sourceTree = "<group>"; };
+		FAF5514C1C980DEB00C001AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF551531C980ED100C001AA /* SM3DMotionSensorDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SM3DMotionSensorDataTests.m; path = Data/SM3DMotionSensorDataTests.m; sourceTree = "<group>"; };
+		FAF551571C9815B400C001AA /* SMBatteryDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBatteryDataTests.m; path = Data/SMBatteryDataTests.m; sourceTree = "<group>"; };
 		FAFE5E5D1BDFC8CE00D34420 /* SMMagnetometerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMMagnetometerSensor.h; path = Sensors/SMMagnetometerSensor.h; sourceTree = "<group>"; };
 		FAFE5E5E1BDFC8CE00D34420 /* SMMagnetometerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMMagnetometerSensor.m; path = Sensors/SMMagnetometerSensor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +117,14 @@
 			files = (
 				FAE46A101BB40B1500B6E4BA /* CoreBluetooth.framework in Frameworks */,
 				FABB1CDE1BCDBB9200FE8909 /* MobileWiFi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF551451C980DEB00C001AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF5514D1C980DEB00C001AA /* libSMSenseMatters.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +157,7 @@
 				FABB1CDD1BCDBB9200FE8909 /* MobileWiFi.framework */,
 				FAE46A0F1BB40B1500B6E4BA /* CoreBluetooth.framework */,
 				FAE469B51BB3264D00B6E4BA /* SMSenseMatters */,
+				FAF551491C980DEB00C001AA /* SMSenseMattersTests */,
 				FAE469B41BB3264D00B6E4BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE469B31BB3264D00B6E4BA /* libSMSenseMatters.a */,
+				FAF551481C980DEB00C001AA /* SMSenseMattersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +222,33 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		FAF551491C980DEB00C001AA /* SMSenseMattersTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF551561C980EDB00C001AA /* Sensors */,
+				FAF551551C980ED500C001AA /* Data */,
+				FAF5514A1C980DEB00C001AA /* SMSenseMattersTests.m */,
+				FAF5514C1C980DEB00C001AA /* Info.plist */,
+			);
+			path = SMSenseMattersTests;
+			sourceTree = "<group>";
+		};
+		FAF551551C980ED500C001AA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FAF551531C980ED100C001AA /* SM3DMotionSensorDataTests.m */,
+				FAF551571C9815B400C001AA /* SMBatteryDataTests.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		FAF551561C980EDB00C001AA /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sensors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -238,6 +294,24 @@
 			productReference = FAE469B31BB3264D00B6E4BA /* libSMSenseMatters.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		FAF551471C980DEB00C001AA /* SMSenseMattersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF551521C980DEB00C001AA /* Build configuration list for PBXNativeTarget "SMSenseMattersTests" */;
+			buildPhases = (
+				FAF551441C980DEB00C001AA /* Sources */,
+				FAF551451C980DEB00C001AA /* Frameworks */,
+				FAF551461C980DEB00C001AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF5514F1C980DEB00C001AA /* PBXTargetDependency */,
+			);
+			name = SMSenseMattersTests;
+			productName = SMSenseMattersTests;
+			productReference = FAF551481C980DEB00C001AA /* SMSenseMattersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,6 +326,9 @@
 				TargetAttributes = {
 					FAE469B21BB3264D00B6E4BA = {
 						CreatedOnToolsVersion = 7.0;
+					};
+					FAF551471C980DEB00C001AA = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -268,9 +345,20 @@
 			projectRoot = "";
 			targets = (
 				FAE469B21BB3264D00B6E4BA /* SMSenseMatters */,
+				FAF551471C980DEB00C001AA /* SMSenseMattersTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF551461C980DEB00C001AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAE469AF1BB3264D00B6E4BA /* Sources */ = {
@@ -294,7 +382,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAF551441C980DEB00C001AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF551581C9815B400C001AA /* SMBatteryDataTests.m in Sources */,
+				FAF551541C980ED100C001AA /* SM3DMotionSensorDataTests.m in Sources */,
+				FAF5514B1C980DEB00C001AA /* SMSenseMattersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAF5514F1C980DEB00C001AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE469B21BB3264D00B6E4BA /* SMSenseMatters */;
+			targetProxy = FAF5514E1C980DEB00C001AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FAE469BA1BB3264D00B6E4BA /* Debug */ = {
@@ -409,6 +515,30 @@
 			};
 			name = Release;
 		};
+		FAF551501C980DEB00C001AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SMSenseMattersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexblundell.SMSenseMattersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAF551511C980DEB00C001AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SMSenseMattersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexblundell.SMSenseMattersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +556,15 @@
 			buildConfigurations = (
 				FAE469BD1BB3264D00B6E4BA /* Debug */,
 				FAE469BE1BB3264D00B6E4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF551521C980DEB00C001AA /* Build configuration list for PBXNativeTarget "SMSenseMattersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF551501C980DEB00C001AA /* Debug */,
+				FAF551511C980DEB00C001AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

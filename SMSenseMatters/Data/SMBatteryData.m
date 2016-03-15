@@ -36,10 +36,25 @@
 
 - (id)serialise {
     NSMutableDictionary *json = [[super serialise] mutableCopy];
-   // [json setObject:[NSNumber numberWithFloat:_xAxis] forKey:DATA_MOTION_KEY_X];
-   // [json setObject:[NSNumber numberWithFloat:_yAxis] forKey:DATA_MOTION_KEY_Y];
-   // [json setObject:[NSNumber numberWithFloat:_zAxis] forKey:DATA_MOTION_KEY_Z];
+   
+    [json setObject:[NSNumber numberWithFloat:_batteryLevel] forKey:@"level"];
+    [json setObject:[NSNumber numberWithInteger:_batteryStatus] forKey:@"status"];
+    [json setObject:[self describeStatus:_batteryStatus] forKey:@"statusDescription"];
+    
     return json;
+}
+
+- (NSString *)describeStatus:(SMBatteryStatus)status {
+    switch (status) {
+        case SMBatteryStatusCharging:
+            return @"Charging";
+        case SMBatteryStatusFull:
+            return @"Full";
+        case SMBatteryStatusUnplugged:
+            return @"Not Charging";
+        default:
+            return @"Unknown";
+    }
 }
 
 

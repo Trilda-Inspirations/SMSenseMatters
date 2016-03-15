@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FAE469B21BB3264D00B6E4BA"
+            BuildableName = "libSMSenseMatters.a"
+            BlueprintName = "SMSenseMatters"
+            ReferencedContainer = "container:SMSenseMatters.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

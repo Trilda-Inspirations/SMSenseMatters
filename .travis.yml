@@ -2,6 +2,5 @@ language: objective-c
 xcode_project: SMSenseMatters.xcodeproj # path to your xcodeproj folder
 xcode_scheme: SMSenseMatters
 osx_image: xcode7.2
-after_success: 
-	- xctool -project SMSenseMatters.xcodeproj -scheme SMSenseMattersTests test -destination name="iPhone 6s" -sdk iphonesimulator
+after_success: xctool -project SMSenseMatters.xcodeproj -scheme SMSenseMattersTests test -destination name="iPhone 6s" -sdk iphonesimulator
 

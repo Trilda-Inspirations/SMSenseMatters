@@ -12,6 +12,15 @@ A library for accessing sensors on an iOS device in a unified way, using the cal
 
 ---
 
+The following sensors are currently supported (providing the device you're targetting also supports it):
+
+* Accelerometer
+* Battery
+* Bluetooth
+* Magnetometer
+* Proximity
+* Steps
+
 ## Installation
 To install, download this repository to your computer, and copy the .xcodeproj file into your Xcode workspace. You can then add the `libSMSenseMatters.a` static library as a dependency of your project in the *Project Settings* menu under the *General* tab.
 

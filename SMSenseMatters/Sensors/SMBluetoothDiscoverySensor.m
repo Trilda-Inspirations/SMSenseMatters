@@ -40,7 +40,7 @@
 }
 
 
-/*- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI {
 
     NSString *name = peripheral.name;
     
@@ -50,6 +50,6 @@
     
     NSLog(@"Bluetooth device: %@ (%@), %@", name, peripheral.identifier.UUIDString, RSSI);
     
-}*/
+}
 
 @end

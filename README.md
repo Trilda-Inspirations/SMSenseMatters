@@ -38,3 +38,16 @@ _sensor = [[SMAccelerometerSensor alloc] initWithSenseCallback:^(SMSensorData *s
 
 ```
 
+
+## Troubleshooting
+### Not receiving background updates?
+If you're having issues with receiving data when your app is in the background, then ensure that the relevant *Background Modes* are enabled for your app. You should also register for background updates in your `applicationDidEnterBackground:` delegate method:
+
+```
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        NSLog(@"=== Background has expired ===");
+    }];
+}
+```
+

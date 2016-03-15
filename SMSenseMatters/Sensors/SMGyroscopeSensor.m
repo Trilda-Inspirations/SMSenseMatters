@@ -51,6 +51,15 @@ const float SMGYROSCOPE_DEFAULT_INTERVAL = .2;
     return self;
 }
 
+- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
+    self = [self initWithSenseCallback:callback];
+    if (self) {
+        _motionManager.deviceMotionUpdateInterval = secs;
+        _motionManager.gyroUpdateInterval = secs;
+    }
+    return self;
+}
+
 - (void)sense {
     if (self.callback)
         self.callback(_currentData);

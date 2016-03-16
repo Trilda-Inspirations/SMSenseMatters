@@ -14,6 +14,9 @@
 
 @end
 
+/**
+ *  Tests for the SMBatteryData class
+ */
 @implementation SMBatteryDataTests
 
 /**
@@ -68,7 +71,18 @@
 }
 
 
-- (void)testPerformanceExample {
+/**
+ *  Tests that this data class follows the structure of SMSensorData
+ */
+- (void)testClassStructure {
+    XCTAssertTrue([SMBatteryData isSubclassOfClass:[SMSensorData class]], @"Battery Data is not a subclass of Sensor Data");
+}
+
+
+/**
+ *  Tests the performance of the initialisation method
+ */
+- (void)testPerformanceInitialisation {
     // This is an example of a performance test case.
     [self measureBlock:^{
         [[SMBatteryData alloc] initWithBatteryLevel:0.0f state:UIDeviceBatteryStateUnknown];

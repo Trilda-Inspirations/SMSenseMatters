@@ -12,10 +12,11 @@
 
 @interface SM3DMotionSensorDataTests : XCTestCase
 
-
-
 @end
 
+/**
+ *  Tests for the SM3DMotionSensorData class
+ */
 @implementation SM3DMotionSensorDataTests
 
 
@@ -33,6 +34,9 @@
     
 }
 
+/**
+ *  Testing for the correct serialised data structure
+ */
 - (void)testSerialisation {
     float x = -0.0f;
     float y = 0.99f;
@@ -58,7 +62,7 @@
  *  Tests that this data class follows the structure of SMSensorData
  */
 - (void)testClassStructure {
-    XCTAssertTrue([SM3DMotionSensorData isSubclassOfClass:[SMSensorData class]]);
+    XCTAssertTrue([SM3DMotionSensorData isSubclassOfClass:[SMSensorData class]], @"Motion Data is not a subclass of Sensor Data");
 }
 
 /**

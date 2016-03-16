@@ -24,6 +24,9 @@ const float SMGYROSCOPE_DEFAULT_INTERVAL = .2;
  */
 @property (atomic, strong) SM3DMotionSensorData *currentData;
 
+
+@property (nonatomic, strong) NSOperationQueue *operationQueue;
+
 @end
 
 @implementation SMGyroscopeSensor
@@ -38,13 +41,15 @@ const float SMGYROSCOPE_DEFAULT_INTERVAL = .2;
     if (self) {
         _motionManager = [[CMMotionManager alloc] init];
         _motionManager.gyroUpdateInterval = SMGYROSCOPE_DEFAULT_INTERVAL;
+        _operationQueue = [[NSOperationQueue alloc] init];
         _currentData = [[SM3DMotionSensorData alloc] initWithX:0 y:0 z:0];
-        [_motionManager startGyroUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMGyroData *gyroData, NSError *error) {
+        [_motionManager startGyroUpdatesToQueue:_operationQueue withHandler:^(CMGyroData *gyroData, NSError *error) {
             if (!error && gyroData) {
                 _currentData.xAxis = gyroData.rotationRate.x;
                 _currentData.yAxis = gyroData.rotationRate.y;
                 _currentData.zAxis = gyroData.rotationRate.z;
                 _currentData.dateSensed = [NSDate date];
+                [self sense];
             }
         }];
     }

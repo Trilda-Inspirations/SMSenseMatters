@@ -10,6 +10,16 @@
 #import <UIKit/UIKit.h>
 #import "SMBatteryData.h"
 
+@interface SMBatterySensor ()
+
+@property (nonatomic) float batteryLevel;
+
+@property (nonatomic) UIDeviceBatteryState batteryState;
+
+@property (nonatomic) NSTimer *timer;
+
+@end
+
 @implementation SMBatterySensor
 
 
@@ -21,9 +31,22 @@
     self = [super initWithSenseCallback:callback];
     if (self) {
         [[UIDevice currentDevice] setBatteryMonitoringEnabled:YES];
+        
+        
+        
     }
     return self;
 }
+
+- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
+    self = [self initWithSenseCallback:callback];
+    if (self) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:secs target:self selector:@selector(sense) userInfo:nil repeats:YES];
+        [_timer fire];
+    }
+    return self;
+}
+
 
 - (void)sense {
     float batteryLevel = [UIDevice currentDevice].batteryLevel;

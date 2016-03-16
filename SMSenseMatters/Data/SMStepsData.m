@@ -18,4 +18,15 @@
     }
     return self;
 }
+
+- (id)serialise {
+    NSMutableDictionary *serialised = [[super serialise] mutableCopy];
+    
+    [serialised setObject:[NSNumber numberWithInt:_steps] forKey:@"steps"];
+    
+    return serialised;
+}
+
+
+
 @end

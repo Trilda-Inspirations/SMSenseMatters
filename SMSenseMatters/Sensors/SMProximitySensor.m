@@ -9,16 +9,40 @@
 #import "SMProximitySensor.h"
 #import "SMProximityData.h"
 
+@interface SMProximitySensor ()
+
+@property (nonatomic) BOOL proximity;
+
+@property (nonatomic, strong) NSTimer *timer;
+
+@end
+
 @implementation SMProximitySensor
 
 + (BOOL)isAvailable {
     return [UIDevice currentDevice].proximityMonitoringEnabled;
 }
 
+- (id)initWithSenseCallback:(SenseCallback)callback {
+    self = [super initWithSenseCallback:callback];
+    if (self) {
+        [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+    }
+    return self;
+}
+
+- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
+    self = [self initWithSenseCallback:callback];
+    if (self) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:secs target:self selector:@selector(sense) userInfo:nil repeats:YES];
+        [_timer fire];
+    }
+    return self;
+}
+
 - (void)sense {
-    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
-    BOOL proximity = [UIDevice currentDevice].proximityState;
-    SMProximityData *data = [[SMProximityData alloc] initWithProximity:proximity];
+    _proximity = [UIDevice currentDevice].proximityState;
+    SMProximityData *data = [[SMProximityData alloc] initWithProximity:_proximity];
     if (self.callback) {
         self.callback(data);
     }

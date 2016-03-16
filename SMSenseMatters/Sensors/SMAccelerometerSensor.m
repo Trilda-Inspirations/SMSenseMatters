@@ -25,7 +25,7 @@ const float SMACCELEROMETER_DEFAULT_INTERVAL = .2;
 
 
 /**
- *  <#Description#>
+ *  Operation queue for receiving data
  */
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 

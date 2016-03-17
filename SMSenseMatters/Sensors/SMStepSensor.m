@@ -27,6 +27,9 @@
  */
 @property (nonatomic) int numberOfSteps;
 
+/**
+ *  Timer for repeat scheduling
+ */
 @property (nonatomic, strong) NSTimer *timer;
 
 @end

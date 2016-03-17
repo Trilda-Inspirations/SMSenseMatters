@@ -22,7 +22,7 @@ The following sensors are currently supported (providing the device you're targe
 * Steps
 
 ## Installation
-To install, download this repository to your computer, and copy the .xcodeproj file into your Xcode workspace. You can then add the `libSMSenseMatters.a` static library as a dependency of your project in the *Project Settings* menu under the *General* tab.
+To install, download this repository to your computer, and copy the .xcodeproj file into your Xcode workspace. If your project is not already in a workspace, Xcode will ask you to create one. You can then add the `libSMSenseMatters.a` static library as a dependency of your project in the *Project Settings* menu under the *General* tab, in the *Linked Frameworks and Libraries* section.
 
 
 ## Usage 
@@ -32,7 +32,7 @@ Documentation can be found [here](http://smsensematters.alexblundell.com).
 
 ### Example
 
-#### Accelerometer
+#### Sensors
 The following example will subscribe to updates from the accelerometer, with a time interval of 30 seconds.
 
 ```
@@ -46,6 +46,28 @@ _sensor = [[SMAccelerometerSensor alloc] initWithSenseCallback:^(SMSensorData *s
     } timeInterval:30.0f];
 
 ```
+
+#### Serialising Data
+The following example shows how to serialise any SMSensorData object into a JSON string.
+
+```
+#import <SMSenseMatters/SMSenseMatters.h>
+
+...
+
+_sensor = [[SMGyroscopeSensor alloc] initWithSenseCallback:^(SMSenseData *senseData) {
+	SM3DMotionSensorData *data = (SM3DMotionSensorData *)senseData;
+	NSDictionary *serialisedData = [senseData serialise];
+
+	NSData *JSONData = [NSJSONSerialization dataWithJSONObject:serialisedData options:0 error:nil];
+    NSString *jsonStr = [[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding];
+    
+    // jsonStr { dateSensed: "2016-03-15 10:00:00", xAxis: 0.300023, yAxis: 0.203928, zAxis: -0.89222 }
+
+}];
+
+```
+
 
 
 ## Troubleshooting

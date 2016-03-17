@@ -27,6 +27,8 @@
  */
 @property (nonatomic) int numberOfSteps;
 
+@property (nonatomic, strong) NSTimer *timer;
+
 @end
 
 @implementation SMStepSensor
@@ -44,6 +46,15 @@
         [_pedometer startPedometerUpdatesFromDate:_dateStarted withHandler:^(CMPedometerData *pedometerData, NSError *error) {
             _numberOfSteps = [pedometerData.numberOfSteps intValue];
         }];
+    }
+    return self;
+}
+
+- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
+    self = [self initWithSenseCallback:callback];
+    if (self) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:secs target:self selector:@selector(sense) userInfo:nil repeats:YES];
+        [_timer fire];
     }
     return self;
 }

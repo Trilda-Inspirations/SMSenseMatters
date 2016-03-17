@@ -15,12 +15,12 @@
 @interface SMProximitySensor : SMSensor
 
 /**
- *  Initialises the gyroscope sensor with specified callback and repeat time interval
+ *  Initialises the proximity sensor with specified callback and repeat time interval
  *
  *  @param callback callback for data
  *  @param secs     seconds between sensing
  *
- *  @return Gyroscope sensor
+ *  @return Proximity sensor
  */
 - (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs;
 

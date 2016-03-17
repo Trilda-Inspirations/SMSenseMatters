@@ -38,8 +38,11 @@
 @interface SMSenseMatters : NSObject
 
 
-- (void)performBackgroundTasks;
-
+/**
+ *  Gets the singleton instance
+ *
+ *  @return instance
+ */
 + (id)sharedInstance;
 
 @end

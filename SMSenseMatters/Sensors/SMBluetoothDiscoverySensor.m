@@ -44,6 +44,7 @@
 
     NSString *name = peripheral.name;
     
+    
     if ([advertisementData count] > 1) {
        // NSDictionary *dict = advertisementData;
     }

@@ -31,11 +31,22 @@
     self = [super initWithSenseCallback:callback];
     if (self) {
         [[UIDevice currentDevice] setBatteryMonitoringEnabled:YES];
+        [self batteryLevelChanged:nil];
+        [self batteryStateChanged:nil];
         
-        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryLevelChanged:) name:UIDeviceBatteryLevelDidChangeNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(batteryStateChanged:) name:UIDeviceBatteryStateDidChangeNotification object:nil];
         
     }
     return self;
+}
+
+- (void)batteryLevelChanged:(NSNotification *)note {
+    _batteryLevel = [[UIDevice currentDevice] batteryLevel];
+}
+
+- (void)batteryStateChanged:(NSNotification *)note {
+    _batteryState = [[UIDevice currentDevice] batteryState];
 }
 
 - (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
@@ -49,12 +60,14 @@
 
 
 - (void)sense {
-    float batteryLevel = [UIDevice currentDevice].batteryLevel;
-    UIDeviceBatteryState batteryState = [UIDevice currentDevice].batteryState;
-    SMBatteryData *data = [[SMBatteryData alloc] initWithBatteryLevel:batteryLevel state:batteryState];
+    SMBatteryData *data = [[SMBatteryData alloc] initWithBatteryLevel:_batteryLevel state:_batteryState];
     if (self.callback) {
         self.callback(data);
     }
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

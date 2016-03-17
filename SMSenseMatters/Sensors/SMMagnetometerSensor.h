@@ -13,4 +13,14 @@
  */
 @interface SMMagnetometerSensor : SMSensor
 
+/**
+ *  Initialises the magnetometer sensor with specified callback and repeat time interval
+ *
+ *  @param callback callback for data
+ *  @param secs     seconds between sensing
+ *
+ *  @return Magnetometer sensor
+ */
+- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs;
+
 @end

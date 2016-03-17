@@ -54,8 +54,17 @@
             _lastX = magnetometerData.magneticField.x;
             _lastY = magnetometerData.magneticField.y;
             _lastZ = magnetometerData.magneticField.z;
+            [self sense];
         }];
         
+    }
+    return self;
+}
+
+- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
+    self = [self initWithSenseCallback:callback];
+    if (self) {
+        _manager.magnetometerUpdateInterval = secs;
     }
     return self;
 }

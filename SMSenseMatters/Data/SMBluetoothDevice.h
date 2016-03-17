@@ -40,4 +40,12 @@
  */
 - (id)initWithName:(NSString *)name UUID:(NSString *)UUID RSSI:(NSNumber *)RSSI;
 
+
+/**
+ *  Serialises the structure into JSON format
+ *
+ *  @return JSON object
+ */
+- (id)serialise;
+
 @end

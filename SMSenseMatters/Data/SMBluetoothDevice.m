@@ -22,4 +22,13 @@
 }
 
 
+- (id)serialise {
+    NSMutableDictionary *data = [NSMutableDictionary dictionary];
+    [data setObject:_name forKey:@"name"];
+    [data setObject:_UUID forKey:@"UUID"];
+    [data setObject:_RSSI forKey:@"RSSI"];
+    return data;
+}
+
+
 @end

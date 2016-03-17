@@ -18,4 +18,14 @@
     return self;
 }
 
+- (id)serialise {
+    NSMutableDictionary *data = [[self serialise] mutableCopy];
+    NSMutableArray *devices = [NSMutableArray array];
+    for (SMBluetoothDevice *device in _currentDevices) {
+        [devices addObject:[device serialise]];
+    }
+    [data setObject:devices forKey:@"devices"];
+    return data;
+}
+
 @end

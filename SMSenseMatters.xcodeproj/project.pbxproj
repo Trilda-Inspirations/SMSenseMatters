@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0D87241C9AF1E40098F7A6 /* SMBluetoothDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0D87221C9AF1E40098F7A6 /* SMBluetoothDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0D87251C9AF1E40098F7A6 /* SMBluetoothDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0D87231C9AF1E40098F7A6 /* SMBluetoothDevice.m */; };
+		FA0D87281C9AF20C0098F7A6 /* SMBluetoothData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0D87261C9AF20C0098F7A6 /* SMBluetoothData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0D87291C9AF20C0098F7A6 /* SMBluetoothData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0D87271C9AF20C0098F7A6 /* SMBluetoothData.m */; };
 		FA5D45631C99761900F0C119 /* SMProximityDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D45621C99761900F0C119 /* SMProximityDataTests.m */; };
 		FA5D45651C9978A200F0C119 /* SMStepsDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D45641C9978A200F0C119 /* SMStepsDataTests.m */; };
 		FA5D45691C997D6900F0C119 /* SMBatterySensorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D45681C997D6900F0C119 /* SMBatterySensorTests.m */; };
@@ -71,6 +75,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA0D87221C9AF1E40098F7A6 /* SMBluetoothDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBluetoothDevice.h; path = Data/SMBluetoothDevice.h; sourceTree = "<group>"; };
+		FA0D87231C9AF1E40098F7A6 /* SMBluetoothDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBluetoothDevice.m; path = Data/SMBluetoothDevice.m; sourceTree = "<group>"; };
+		FA0D87261C9AF20C0098F7A6 /* SMBluetoothData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBluetoothData.h; path = Data/SMBluetoothData.h; sourceTree = "<group>"; };
+		FA0D87271C9AF20C0098F7A6 /* SMBluetoothData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBluetoothData.m; path = Data/SMBluetoothData.m; sourceTree = "<group>"; };
 		FA5D45621C99761900F0C119 /* SMProximityDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMProximityDataTests.m; path = Data/SMProximityDataTests.m; sourceTree = "<group>"; };
 		FA5D45641C9978A200F0C119 /* SMStepsDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMStepsDataTests.m; path = Data/SMStepsDataTests.m; sourceTree = "<group>"; };
 		FA5D45681C997D6900F0C119 /* SMBatterySensorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBatterySensorTests.m; path = Sensors/SMBatterySensorTests.m; sourceTree = "<group>"; };
@@ -224,6 +232,10 @@
 				FAE46A081BB4098A00B6E4BA /* SMProximityData.m */,
 				FA9CF3C81BDFBF5E005F906C /* SMStepsData.h */,
 				FA9CF3C91BDFBF5E005F906C /* SMStepsData.m */,
+				FA0D87221C9AF1E40098F7A6 /* SMBluetoothDevice.h */,
+				FA0D87231C9AF1E40098F7A6 /* SMBluetoothDevice.m */,
+				FA0D87261C9AF20C0098F7A6 /* SMBluetoothData.h */,
+				FA0D87271C9AF20C0098F7A6 /* SMBluetoothData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -272,9 +284,11 @@
 				FAE46A131BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.h in Headers */,
 				FAE46A051BB4061800B6E4BA /* SMBatteryData.h in Headers */,
 				FA9CF3C61BDFBEE1005F906C /* SMStepSensor.h in Headers */,
+				FA0D87281C9AF20C0098F7A6 /* SMBluetoothData.h in Headers */,
 				FAE469F71BB3359700B6E4BA /* SMGyroscopeSensor.h in Headers */,
 				FA9CF3CA1BDFBF5E005F906C /* SMStepsData.h in Headers */,
 				FAE469EB1BB3357900B6E4BA /* SM3DMotionSensorData.h in Headers */,
+				FA0D87241C9AF1E40098F7A6 /* SMBluetoothDevice.h in Headers */,
 				FAE469F51BB3359700B6E4BA /* SMAccelerometerSensor.h in Headers */,
 				FAE46A011BB4057100B6E4BA /* SMBatterySensor.h in Headers */,
 				FAFE5E5F1BDFC8CE00D34420 /* SMMagnetometerSensor.h in Headers */,
@@ -384,7 +398,9 @@
 				FA9CF3C71BDFBEE1005F906C /* SMStepSensor.m in Sources */,
 				FAE46A0A1BB4098A00B6E4BA /* SMProximityData.m in Sources */,
 				FAE469EC1BB3357900B6E4BA /* SM3DMotionSensorData.m in Sources */,
+				FA0D87251C9AF1E40098F7A6 /* SMBluetoothDevice.m in Sources */,
 				FA9CF3CB1BDFBF5E005F906C /* SMStepsData.m in Sources */,
+				FA0D87291C9AF20C0098F7A6 /* SMBluetoothData.m in Sources */,
 				FAE469F61BB3359700B6E4BA /* SMAccelerometerSensor.m in Sources */,
 				FAE46A061BB4061800B6E4BA /* SMBatteryData.m in Sources */,
 				FAFE5E601BDFC8CE00D34420 /* SMMagnetometerSensor.m in Sources */,

@@ -27,6 +27,9 @@
 #import <SMSenseMatters/SMBatteryData.h>
 #import <SMSenseMatters/SMProximityData.h>
 #import <SMSenseMatters/SMStepsData.h>
+#import <SMSenseMatters/SMBluetoothData.h>
+#import <SMSenseMatters/SMBluetoothDevice.h>
+
 
 #endif
 

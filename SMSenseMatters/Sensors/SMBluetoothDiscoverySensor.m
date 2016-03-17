@@ -17,9 +17,14 @@
  */
 @property (nonatomic, retain) CBCentralManager *bluetoothManager;
 
-
+/**
+ *  List of devices discovered since the last sense
+ */
 @property (nonatomic, retain) NSMutableArray *devicesSinceSense;
 
+/**
+ *  Timer for repeat sensing
+ */
 @property (nonatomic, retain) NSTimer *timer;
 
 @end

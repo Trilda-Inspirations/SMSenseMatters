@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "SMGeoPositionDataTests.h"
 #import "SMGeoPositionData.h"
 
 @interface SMGeoPositionDataTests : XCTestCase

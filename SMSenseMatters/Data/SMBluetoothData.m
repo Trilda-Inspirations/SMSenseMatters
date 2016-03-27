@@ -19,7 +19,7 @@
 }
 
 - (id)serialise {
-    NSMutableDictionary *data = [[self serialise] mutableCopy];
+    NSMutableDictionary *data = [[super serialise] mutableCopy];
     NSMutableArray *devices = [NSMutableArray array];
     for (SMBluetoothDevice *device in _currentDevices) {
         [devices addObject:[device serialise]];

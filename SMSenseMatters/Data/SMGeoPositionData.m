@@ -23,7 +23,7 @@
 
 
 - (id)serialise {
-    NSMutableDictionary *data = [[self serialise] mutableCopy];
+    NSMutableDictionary *data = [[super serialise] mutableCopy];
     [data setObject:[NSNumber numberWithDouble:_latitude] forKey:@"latitude"];
     [data setObject:[NSNumber numberWithDouble:_longitude] forKey:@"longitude"];
     [data setObject:[NSNumber numberWithDouble:_altitude] forKey:@"altitude"];

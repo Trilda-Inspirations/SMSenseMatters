@@ -14,6 +14,11 @@
 		FA5D45631C99761900F0C119 /* SMProximityDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D45621C99761900F0C119 /* SMProximityDataTests.m */; };
 		FA5D45651C9978A200F0C119 /* SMStepsDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D45641C9978A200F0C119 /* SMStepsDataTests.m */; };
 		FA5D45691C997D6900F0C119 /* SMBatterySensorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D45681C997D6900F0C119 /* SMBatterySensorTests.m */; };
+		FA9567A61CA8933100D87123 /* SMGeoPositionData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9567A41CA8933100D87123 /* SMGeoPositionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9567A71CA8933100D87123 /* SMGeoPositionData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9567A51CA8933100D87123 /* SMGeoPositionData.m */; };
+		FA9567AA1CA8934600D87123 /* SMLocationSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9567A81CA8934600D87123 /* SMLocationSensor.h */; };
+		FA9567AB1CA8934600D87123 /* SMLocationSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9567A91CA8934600D87123 /* SMLocationSensor.m */; };
+		FA9567AE1CA8969600D87123 /* SMGeoPositionDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9567AD1CA8969600D87123 /* SMGeoPositionDataTests.m */; };
 		FA9CF3C61BDFBEE1005F906C /* SMStepSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9CF3C41BDFBEE1005F906C /* SMStepSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9CF3C71BDFBEE1005F906C /* SMStepSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9CF3C51BDFBEE1005F906C /* SMStepSensor.m */; };
 		FA9CF3CA1BDFBF5E005F906C /* SMStepsData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9CF3C81BDFBF5E005F906C /* SMStepsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,6 +87,11 @@
 		FA5D45621C99761900F0C119 /* SMProximityDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMProximityDataTests.m; path = Data/SMProximityDataTests.m; sourceTree = "<group>"; };
 		FA5D45641C9978A200F0C119 /* SMStepsDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMStepsDataTests.m; path = Data/SMStepsDataTests.m; sourceTree = "<group>"; };
 		FA5D45681C997D6900F0C119 /* SMBatterySensorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBatterySensorTests.m; path = Sensors/SMBatterySensorTests.m; sourceTree = "<group>"; };
+		FA9567A41CA8933100D87123 /* SMGeoPositionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMGeoPositionData.h; path = Data/SMGeoPositionData.h; sourceTree = "<group>"; };
+		FA9567A51CA8933100D87123 /* SMGeoPositionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMGeoPositionData.m; path = Data/SMGeoPositionData.m; sourceTree = "<group>"; };
+		FA9567A81CA8934600D87123 /* SMLocationSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMLocationSensor.h; path = Sensors/SMLocationSensor.h; sourceTree = "<group>"; };
+		FA9567A91CA8934600D87123 /* SMLocationSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMLocationSensor.m; path = Sensors/SMLocationSensor.m; sourceTree = "<group>"; };
+		FA9567AD1CA8969600D87123 /* SMGeoPositionDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMGeoPositionDataTests.m; path = Data/SMGeoPositionDataTests.m; sourceTree = "<group>"; };
 		FA9CF3C41BDFBEE1005F906C /* SMStepSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMStepSensor.h; path = Sensors/SMStepSensor.h; sourceTree = "<group>"; };
 		FA9CF3C51BDFBEE1005F906C /* SMStepSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMStepSensor.m; path = Sensors/SMStepSensor.m; sourceTree = "<group>"; };
 		FA9CF3C81BDFBF5E005F906C /* SMStepsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMStepsData.h; path = Data/SMStepsData.h; sourceTree = "<group>"; };
@@ -215,6 +225,8 @@
 				FA9CF3C51BDFBEE1005F906C /* SMStepSensor.m */,
 				FAFE5E5D1BDFC8CE00D34420 /* SMMagnetometerSensor.h */,
 				FAFE5E5E1BDFC8CE00D34420 /* SMMagnetometerSensor.m */,
+				FA9567A81CA8934600D87123 /* SMLocationSensor.h */,
+				FA9567A91CA8934600D87123 /* SMLocationSensor.m */,
 			);
 			name = Sensors;
 			sourceTree = "<group>";
@@ -236,6 +248,8 @@
 				FA0D87231C9AF1E40098F7A6 /* SMBluetoothDevice.m */,
 				FA0D87261C9AF20C0098F7A6 /* SMBluetoothData.h */,
 				FA0D87271C9AF20C0098F7A6 /* SMBluetoothData.m */,
+				FA9567A41CA8933100D87123 /* SMGeoPositionData.h */,
+				FA9567A51CA8933100D87123 /* SMGeoPositionData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -258,6 +272,7 @@
 				FAF551571C9815B400C001AA /* SMBatteryDataTests.m */,
 				FA5D45621C99761900F0C119 /* SMProximityDataTests.m */,
 				FA5D45641C9978A200F0C119 /* SMStepsDataTests.m */,
+				FA9567AD1CA8969600D87123 /* SMGeoPositionDataTests.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -286,7 +301,9 @@
 				FA9CF3C61BDFBEE1005F906C /* SMStepSensor.h in Headers */,
 				FA0D87281C9AF20C0098F7A6 /* SMBluetoothData.h in Headers */,
 				FAE469F71BB3359700B6E4BA /* SMGyroscopeSensor.h in Headers */,
+				FA9567AA1CA8934600D87123 /* SMLocationSensor.h in Headers */,
 				FA9CF3CA1BDFBF5E005F906C /* SMStepsData.h in Headers */,
+				FA9567A61CA8933100D87123 /* SMGeoPositionData.h in Headers */,
 				FAE469EB1BB3357900B6E4BA /* SM3DMotionSensorData.h in Headers */,
 				FA0D87241C9AF1E40098F7A6 /* SMBluetoothDevice.h in Headers */,
 				FAE469F51BB3359700B6E4BA /* SMAccelerometerSensor.h in Headers */,
@@ -392,11 +409,13 @@
 				FAE469FA1BB3359700B6E4BA /* SMSensor.m in Sources */,
 				FAE46A141BB40B4100B6E4BA /* SMBluetoothDiscoverySensor.m in Sources */,
 				FAE46A021BB4057100B6E4BA /* SMBatterySensor.m in Sources */,
+				FA9567A71CA8933100D87123 /* SMGeoPositionData.m in Sources */,
 				FAE469F81BB3359700B6E4BA /* SMGyroscopeSensor.m in Sources */,
 				FAE469EE1BB3357900B6E4BA /* SMSensorData.m in Sources */,
 				FAE46A0E1BB409A300B6E4BA /* SMProximitySensor.m in Sources */,
 				FA9CF3C71BDFBEE1005F906C /* SMStepSensor.m in Sources */,
 				FAE46A0A1BB4098A00B6E4BA /* SMProximityData.m in Sources */,
+				FA9567AB1CA8934600D87123 /* SMLocationSensor.m in Sources */,
 				FAE469EC1BB3357900B6E4BA /* SM3DMotionSensorData.m in Sources */,
 				FA0D87251C9AF1E40098F7A6 /* SMBluetoothDevice.m in Sources */,
 				FA9CF3CB1BDFBF5E005F906C /* SMStepsData.m in Sources */,
@@ -414,6 +433,7 @@
 				FAF551581C9815B400C001AA /* SMBatteryDataTests.m in Sources */,
 				FA5D45691C997D6900F0C119 /* SMBatterySensorTests.m in Sources */,
 				FAF551541C980ED100C001AA /* SM3DMotionSensorDataTests.m in Sources */,
+				FA9567AE1CA8969600D87123 /* SMGeoPositionDataTests.m in Sources */,
 				FA5D45651C9978A200F0C119 /* SMStepsDataTests.m in Sources */,
 				FAF5514B1C980DEB00C001AA /* SMSenseMattersTests.m in Sources */,
 				FA5D45631C99761900F0C119 /* SMProximityDataTests.m in Sources */,

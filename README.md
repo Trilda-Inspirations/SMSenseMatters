@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/spikeyfish2/SMSenseMatters.svg?branch=master)](https://travis-ci.org/spikeyfish2/SMSenseMatters)
 
-A library for accessing sensors on an iOS device in a unified way, using the callback methodology.
+An Objective-C library for accessing sensors on an iOS device in a unified way, using block syntax for data callbacks.
 
 ---
 
@@ -20,6 +20,7 @@ The following sensors are currently supported (providing the device you're targe
 * Magnetometer
 * Proximity
 * Steps
+* Location
 
 ## Installation
 To install, download this repository to your computer, and copy the .xcodeproj file into your Xcode workspace. If your project is not already in a workspace, Xcode will ask you to create one. You can then add the `libSMSenseMatters.a` static library as a dependency of your project in the *Project Settings* menu under the *General* tab, in the *Linked Frameworks and Libraries* section.

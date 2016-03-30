@@ -27,8 +27,14 @@
     self = [super initWithSenseCallback:callback];
     if (self) {
         [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(proximityChanged:) name:UIDeviceProximityStateDidChangeNotification object:nil];
+        _proximity = [[UIDevice currentDevice] proximityState];
     }
     return self;
+}
+
+- (void)proximityChanged:(NSNotification *)note {
+    _proximity = [[UIDevice currentDevice] proximityState];
 }
 
 - (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
@@ -41,11 +47,14 @@
 }
 
 - (void)sense {
-    _proximity = [UIDevice currentDevice].proximityState;
     SMProximityData *data = [[SMProximityData alloc] initWithProximity:_proximity];
     if (self.callback) {
         self.callback(data);
     }
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

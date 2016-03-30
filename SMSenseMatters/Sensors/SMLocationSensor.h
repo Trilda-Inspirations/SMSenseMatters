@@ -9,10 +9,11 @@
 #import <SMSenseMatters/SMSenseMatters.h>
 #import <CoreLocation/CoreLocation.h>
 
+/**
+ *  Sensor for getting location from the device
+ */
 @interface SMLocationSensor : SMSensor <CLLocationManagerDelegate>
 
-
-- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs;
 
 
 @end

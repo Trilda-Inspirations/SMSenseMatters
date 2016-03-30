@@ -20,6 +20,7 @@
 #import <SMSenseMatters/SMStepSensor.h>
 #import <SMSenseMatters/SMMagnetometerSensor.h>
 #import <SMSenseMatters/SMBluetoothDiscoverySensor.h>
+#import <SMSenseMatters/SMLocationSensor.h>
 
 // data structures
 #import <SMSenseMatters/SMSensorData.h>
@@ -29,6 +30,7 @@
 #import <SMSenseMatters/SMStepsData.h>
 #import <SMSenseMatters/SMBluetoothData.h>
 #import <SMSenseMatters/SMBluetoothDevice.h>
+#import <SMSenseMatters/SMGeoPositionData.h>
 
 
 #endif

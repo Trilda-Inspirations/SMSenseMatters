@@ -31,8 +31,25 @@
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        _locationManager.distanceFilter = kCLDistanceFilterNone;
+        
+        
+        if ([CLLocationManager authorizationStatus] != kCLAuthorizationStatusAuthorizedAlways) {
+            [_locationManager requestWhenInUseAuthorization];
+        }
+        
+        [_locationManager startMonitoringSignificantLocationChanges];
+        
+        [_locationManager startUpdatingLocation];
+        
     }
     return self;
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        [_locationManager requestAlwaysAuthorization];
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {

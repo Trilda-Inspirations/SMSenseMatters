@@ -32,4 +32,12 @@
     return self;
 }
 
+- (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
+    self = [self initWithSenseCallback:callback];
+    if (self) {
+        
+    }
+    return self;
+}
+
 @end

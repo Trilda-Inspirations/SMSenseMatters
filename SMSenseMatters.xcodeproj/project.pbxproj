@@ -16,7 +16,7 @@
 		FA5D45691C997D6900F0C119 /* SMBatterySensorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5D45681C997D6900F0C119 /* SMBatterySensorTests.m */; };
 		FA9567A61CA8933100D87123 /* SMGeoPositionData.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9567A41CA8933100D87123 /* SMGeoPositionData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9567A71CA8933100D87123 /* SMGeoPositionData.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9567A51CA8933100D87123 /* SMGeoPositionData.m */; };
-		FA9567AA1CA8934600D87123 /* SMLocationSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9567A81CA8934600D87123 /* SMLocationSensor.h */; };
+		FA9567AA1CA8934600D87123 /* SMLocationSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9567A81CA8934600D87123 /* SMLocationSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9567AB1CA8934600D87123 /* SMLocationSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9567A91CA8934600D87123 /* SMLocationSensor.m */; };
 		FA9567AE1CA8969600D87123 /* SMGeoPositionDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9567AD1CA8969600D87123 /* SMGeoPositionDataTests.m */; };
 		FA9CF3C61BDFBEE1005F906C /* SMStepSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9CF3C41BDFBEE1005F906C /* SMStepSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };

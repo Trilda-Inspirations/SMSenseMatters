@@ -66,8 +66,9 @@ const float SMGYROSCOPE_DEFAULT_INTERVAL = .2;
 }
 
 - (void)sense {
-    if (self.callback)
-        self.callback(_currentData);
+    if (self.callback) {
+        self.callback([[SM3DMotionSensorData alloc] initWithX:_currentData.xAxis y:_currentData.yAxis z:_currentData.zAxis]);
+    }
 }
 
 @end

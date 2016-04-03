@@ -17,6 +17,8 @@
 
 @property (nonatomic, retain) CLLocationManager *locationManager;
 
+@property (nonatomic, retain) NSTimer *timer;
+
 @end
 
 
@@ -63,8 +65,8 @@
 - (id)initWithSenseCallback:(SenseCallback)callback timeInterval:(NSTimeInterval)secs {
     self = [self initWithSenseCallback:callback];
     if (self) {
-        NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:secs target:self selector:@selector(sense) userInfo:nil repeats:YES];
-        [timer fire];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:secs target:self selector:@selector(sense) userInfo:nil repeats:YES];
+        [_timer fire];
         
     }
     return self;

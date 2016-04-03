@@ -29,8 +29,6 @@
     XCTAssertTrue([[jsonData objectForKey:@"latitude"] doubleValue] == coordinate.latitude);
     XCTAssertTrue([[jsonData objectForKey:@"longitude"] doubleValue] == coordinate.longitude);
     XCTAssertTrue([[jsonData objectForKey:@"altitude"] doubleValue] == altitude);
-    
-    
 }
 
 - (void)testZeroParameters {

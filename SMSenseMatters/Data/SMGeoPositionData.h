@@ -11,12 +11,32 @@
 
 @interface SMGeoPositionData : SMSensorData
 
+/**
+ *  Latitude position of the geolocation
+ */
 @property (nonatomic) CLLocationDegrees latitude;
 
+
+/**
+ *  Longitude position of the geolocation
+ */
 @property (nonatomic) CLLocationDegrees longitude;
 
+
+/**
+ *  Altitude of the geolocation
+ */
 @property (nonatomic) CLLocationDistance altitude;
 
+
+/**
+ *  Initialises a Geo Position Data structure
+ *
+ *  @param position Position
+ *  @param altitude Altitude (m)
+ *
+ *  @return instance
+ */
 - (id)initWithPosition:(CLLocationCoordinate2D)position altitude:(CLLocationDistance)altitude;
 
 

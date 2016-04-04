@@ -42,6 +42,14 @@ typedef enum : NSUInteger {
  */
 @property (nonatomic) SMBatteryStatus batteryStatus;
 
+/**
+ *  Initialises a battery data structure
+ *
+ *  @param batteryLevel battery level of the device
+ *  @param batteryState charging state
+ *
+ *  @return <#return value description#>
+ */
 - (id)initWithBatteryLevel:(float)batteryLevel state:(UIDeviceBatteryState)batteryState;
 
 @end
